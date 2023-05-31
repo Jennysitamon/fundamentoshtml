@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Especifidad</title>
+    <style>
+        * {
+            background-color: rgb(219, 219, 163);
+        }
+        /* {
+            background-color: rgb(172, 65, 172);
+        }
+        */
+        div {
+            background-color: rgb(229, 240, 228);
+        }
+        p {
+            background-color: darkolivegreen;
+        }
+        .item {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            background-color: rgb(158, 207, 158);
+        }
+        #container .item {
+            background-color: chocolate;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+    <div class="item"></div>
+    <p>Texto</p>
+</body>
+</html>
